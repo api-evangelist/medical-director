@@ -1,0 +1,34 @@
+# MedicalDirector
+
+> MedicalDirector is an Australian clinical and practice-management software provider, owned by Telstra Health, serving general practices, specialists, and day hospitals for more than 25 years. Its programmatic surface is Telstra Health Smart API+, a FHIR-native integration gateway for approved technology partners to exchange data with MedicalDirector Helix (and, case-by-case, MedicalDirector Clinical). Smart API+ is a gated, partner-onboarded API: publicly announced but with no self-serve developer portal, no anonymous FHIR CapabilityStatement, and no published OpenAPI; the FHIR version and SMART-on-FHIR auth specifics are not disclosed publicly. Access is granted through a partner agreement.
+
+## APIs
+
+- [Telstra Health Smart API+](https://www.telstrahealth.com/products/smart-api/): FHIR-native integration gateway for MedicalDirector Helix and Clinical. Gated behind a partner agreement; no public spec or metadata endpoint.
+
+## Docs
+
+- [Smart API+ product page](https://www.telstrahealth.com/products/smart-api/)
+- [Smart API+ overview (PDF)](https://www.telstrahealth.com/wp-content/uploads/2024/08/2024-Telstra-Health-Smart-API.pdf)
+- [Smart API+ launch announcement](https://www.telstrahealth.com/telstra-health-launches-smart-api/)
+- [Become a partner / request access](https://www.telstrahealth.com/contact/)
+
+## Products
+
+- [MedicalDirector Helix](https://www.medicaldirector.com/products/helix/): Cloud clinical + practice-management system.
+- [Marketplace](https://www.medicaldirector.com/marketplace)
+
+## Company
+
+- [MedicalDirector website](https://www.medicaldirector.com/)
+- [News / Blog](https://www.medicaldirector.com/news/)
+- [Support](https://www.medicaldirector.com/support)
+- [Security](https://www.medicaldirector.com/security)
+- [Status](https://www.medicaldirector.com/status)
+- [Terms of Use](https://www.medicaldirector.com/terms-of-use)
+- [Privacy Policy](https://www.medicaldirector.com/documents/privacy-policy)
+
+## Notes for agents
+
+- The API is not self-serve. There is no public base URL, OpenAPI, CapabilityStatement, or /.well-known/ discovery surface. Integration requires a signed Telstra Health partner agreement.
+- FHIR version and authentication scheme (SMART-on-FHIR / OAuth2) are not disclosed on public pages as of 2026-07.

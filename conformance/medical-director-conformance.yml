@@ -1,0 +1,30 @@
+generated: '2026-07-24'
+method: searched
+source: >-
+  https://www.telstrahealth.com/products/smart-api/ and
+  https://www.telstrahealth.com/telstra-health-launches-smart-api/
+note: >-
+  Telstra Health Smart API+ is publicly described as a FHIR-native integration
+  gateway. The specific FHIR version, SMART-on-FHIR profile, and OAuth2/auth
+  scheme are NOT disclosed on any public page and cannot be verified anonymously
+  (no CapabilityStatement, metadata endpoint, or OpenAPI is served). Conformance
+  below is limited to what the provider publicly claims; undisclosed items are
+  recorded as unverified (conforms: false) rather than assumed.
+standards:
+- id: fhir
+  conforms: true
+  evidence: >-
+    Provider publicly markets Smart API+ as "Built on FHIR" / "FHIR-native",
+    supporting FHIR-based data exchange across MedicalDirector Helix and Clinical.
+- id: fhir-version
+  conforms: false
+  evidence: FHIR release (R4/R4B/R5) not disclosed on any public page.
+- id: smart-on-fhir
+  conforms: false
+  evidence: SMART App Launch / SMART-on-FHIR profile not published; auth specifics undisclosed.
+- id: oauth2
+  conforms: false
+  evidence: No public OAuth2 authorization-server metadata; auth scheme not disclosed.
+- id: rfc9457-problem-details
+  conforms: false
+  evidence: No OpenAPI or error surface published to verify.

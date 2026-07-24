@@ -1,0 +1,24 @@
+generated: '2026-07-24'
+method: searched
+source: live probes of medicaldirector.com + telstrahealth.com + api.telstrahealth.com
+note: >-
+  No /.well-known/ discovery surface is published. Smart API+ is a gated,
+  partner-onboarded FHIR gateway with no anonymous developer surface; the
+  api.telstrahealth.com host answers but returns 404 (application/json) for all
+  discovery paths, and no SMART-on-FHIR configuration is served publicly.
+hosts:
+- host: https://www.medicaldirector.com
+  documents:
+  - {path: /.well-known/security.txt, status: 404}
+- host: https://www.telstrahealth.com
+  documents:
+  - {path: /.well-known/security.txt, status: 404}
+- host: https://api.telstrahealth.com
+  documents:
+  - {path: /.well-known/oauth-authorization-server, status: 404}
+  - {path: /.well-known/oauth-protected-resource, status: 404}
+  - {path: /.well-known/smart-configuration, status: 404}
+  - {path: /metadata, status: 404}
+  - {path: /fhir/metadata, status: 404}
+  - {path: /openapi.json, status: 404}
+  - {path: /swagger.json, status: 404}

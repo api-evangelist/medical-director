@@ -1,0 +1,86 @@
+aid: medical-director
+url: https://raw.githubusercontent.com/api-evangelist/medical-director/refs/heads/main/apis.yml
+name: MedicalDirector
+kind: company
+description: >-
+  MedicalDirector is an Australian clinical and practice-management software provider,
+  owned by Telstra Health, that has served general practices, specialists, and day
+  hospitals across Australia for more than 25 years. Its product family includes Helix
+  (a cloud-based combined clinical and practice-management system), Clinical and Pracsoft
+  (on-premise clinical and practice-management software), Bluechip (specialist practice
+  management), and Day Surgery. Alongside Best Practice, MedicalDirector is one half of
+  the dominant Australian GP-software duopoly. Its programmatic surface is delivered
+  through Telstra Health Smart API+, a FHIR-native integration gateway that lets approved
+  technology partners exchange data with MedicalDirector Helix (and, on a case-by-case
+  basis, MedicalDirector Clinical) without bespoke, platform-specific integrations. Smart
+  API+ is a gated, partner-onboarded API: it is publicly announced and described but has
+  no self-serve public developer portal, and no FHIR CapabilityStatement or OpenAPI is
+  published anonymously. Access is granted through a partner agreement, and the underlying
+  FHIR version and SMART-on-FHIR auth specifics are not disclosed on public pages.
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+tags:
+- Healthcare
+- Australia
+- EHR
+- EMR
+- FHIR
+- Interoperability
+- Practice Management
+- Primary Care
+- Clinical Software
+- Digital Health
+created: '2026-07-24'
+modified: '2026-07-24'
+specificationVersion: '0.19'
+apis:
+- aid: medical-director:telstra-health-smart-api-plus
+  name: Telstra Health Smart API+
+  description: >-
+    FHIR-native integration gateway from Telstra Health that provides a single, standardized
+    interface for approved technology partners to exchange data with MedicalDirector Helix
+    cloud general-practice patient-management software (and, on a case-by-case basis,
+    MedicalDirector Clinical). Marketed as a build-once gateway that removes the need for
+    bespoke, platform-specific integrations across Telstra Health's primary-care ecosystem.
+    Access is gated behind a partner agreement; no public FHIR CapabilityStatement,
+    metadata endpoint, or OpenAPI is served anonymously, and the specific FHIR version and
+    auth scheme are not disclosed on public pages.
+  humanURL: https://www.telstrahealth.com/products/smart-api/
+  tags:
+  - FHIR
+  - Interoperability
+  - EHR
+  - Primary Care
+  - Healthcare
+  properties:
+  - type: Documentation
+    url: https://www.telstrahealth.com/products/smart-api/
+  - type: Documentation
+    url: https://www.telstrahealth.com/wp-content/uploads/2024/08/2024-Telstra-Health-Smart-API.pdf
+  - type: Blog
+    url: https://www.telstrahealth.com/telstra-health-launches-smart-api/
+  - type: SignUp
+    url: https://www.telstrahealth.com/contact/
+common:
+- type: Website
+  url: https://www.medicaldirector.com/
+- type: Documentation
+  url: https://www.telstrahealth.com/products/smart-api/
+- type: Marketplace
+  url: https://www.medicaldirector.com/marketplace
+- type: StatusPage
+  url: https://www.medicaldirector.com/status
+- type: Blog
+  url: https://www.medicaldirector.com/news/
+- type: Support
+  url: https://www.medicaldirector.com/support
+- type: Security
+  url: https://www.medicaldirector.com/security
+- type: TermsOfService
+  url: https://www.medicaldirector.com/terms-of-use
+- type: PrivacyPolicy
+  url: https://www.medicaldirector.com/documents/privacy-policy
+- type: SignUp
+  url: https://www.telstrahealth.com/contact/
+maintainers:
+- FN: Kin Lane
+  email: kin@apievangelist.com

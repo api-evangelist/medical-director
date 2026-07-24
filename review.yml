@@ -1,0 +1,110 @@
+aid: medical-director
+name: MedicalDirector
+review:
+  question: Does MedicalDirector expose a public, self-serve developer portal with a machine-readable API contract (FHIR CapabilityStatement or OpenAPI)?
+  answer: false
+  date: '2026-07-24'
+  reviewer: API Evangelist
+findings:
+  summary: |
+    MedicalDirector is an Australian clinical and practice-management software
+    provider owned by Telstra Health, and one half of the Australian GP-software
+    duopoly alongside Best Practice. Its programmatic surface is Telstra Health
+    Smart API+, a FHIR-native integration gateway for approved technology
+    partners integrating with MedicalDirector Helix (and MedicalDirector
+    Clinical on a case-by-case basis). Smart API+ is publicly announced and
+    described on Telstra Health's product site, but it is a GATED, partner-
+    onboarded API: there is no self-serve public developer portal, no anonymously
+    served FHIR CapabilityStatement / metadata endpoint, and no downloadable
+    OpenAPI/Swagger. The specific FHIR version and the SMART-on-FHIR / OAuth2
+    auth details are not disclosed on public pages. Access is obtained through a
+    partner agreement (Become a partner / Request a demo / Contact). This is an
+    honest "documented but gated" result; no endpoints, resources, or specs were
+    fabricated.
+  homeMarket: Australia
+  ownership: Telstra Health (MedicalDirector is a Telstra Health brand)
+  products:
+    - Helix (cloud clinical + practice management)
+    - Clinical (on-premise clinical)
+    - Pracsoft (on-premise practice management)
+    - Bluechip (specialist practice management)
+    - Day Surgery
+  developerPortal:
+    url: ""
+    confirmed: false
+    note: >-
+      No developer portal resolves. Probed developer.medicaldirector.com (DNS
+      no-resolve / 000), docs.medicaldirector.com (000), api.medicaldirector.com
+      (000), fhir.medicaldirector.com (000), medicaldirector.com/developers
+      (404), medicaldirector.com/api (404), medicaldirector.com/interoperability
+      (404), and developer/docs/smartapi.telstrahealth.com (000). The only public
+      description of the API is the Telstra Health Smart API+ product page.
+  fhirCapabilityStatement:
+    captured: false
+    version: null
+    note: >-
+      Smart API+ is described as FHIR-native/FHIR-powered, but no FHIR base URL
+      is published and no /metadata CapabilityStatement or
+      /.well-known/smart-configuration is served anonymously
+      (api.medicaldirector.com/metadata and smart-configuration both returned
+      000 / no-resolve). FHIR version not disclosed publicly.
+  downloadableSpecs:
+    count: 0
+    note: >-
+      No OpenAPI/Swagger or FHIR CapabilityStatement was harvested. Probed common
+      spec paths on candidate hosts; none resolved or parsed. openapi/ is empty by
+      design - nothing was fabricated to fill it.
+  authModel:
+    scheme: undisclosed
+    note: >-
+      Smart API+ is FHIR-native and states it "ensures data security," but the
+      public pages do not specify OAuth2, SMART-on-FHIR authorization-code, client
+      credentials, API key, or mTLS, nor any scopes (e.g. patient/*.read). No
+      /.well-known/openid-configuration or /.well-known/smart-configuration was
+      served for anonymous inspection.
+  standardsConformance:
+    fhir: asserted (version undisclosed)
+    auCore: not documented publicly
+    usCore: not applicable (Australian market)
+    ukCore: not applicable
+    daVinci: not documented publicly
+    carin: not applicable
+    note: >-
+      Australian primary-care context centers on FHIR AU Core / AU Base and the
+      Australian Digital Health Agency's My Health Record infrastructure, but
+      MedicalDirector/Telstra Health does not publish a conformance statement or
+      named implementation-guide alignment on public pages.
+  access: gated (partner agreement / request-a-demo; not self-serve)
+  transports:
+    - protocol: REST
+      scheme: https
+      note: FHIR-native REST is asserted for Smart API+ but no public FHIR base URL is documented.
+      documented: false
+    - protocol: WebSocket
+      scheme: wss
+      documented: false
+      note: No WebSocket surface is documented.
+sources:
+  - url: https://www.medicaldirector.com/
+    type: Website
+    note: Company site (Telstra Health-owned); lists Helix/Clinical/Pracsoft/Bluechip/Day Surgery and a Smart Marketplace of integrated partners. HTTP 200.
+  - url: https://www.telstrahealth.com/products/smart-api/
+    type: Documentation
+    note: Telstra Health Smart API+ product page - FHIR-native gateway for Helix (Clinical case-by-case); no developer portal, sandbox, or spec linked; Become-a-partner / Request-a-demo only. HTTP 200.
+  - url: https://www.telstrahealth.com/telstra-health-launches-smart-api/
+    type: Blog
+    note: Launch announcement (HIC 2024) describing Smart API+ as a FHIR-powered single gateway, initially for Helix partners.
+  - url: https://www.medicaldirector.com/marketplace
+    type: Marketplace
+    note: Smart Marketplace of integrated partners (AutoMed, HotDoc, Tyro Health, Healthengine). HTTP 200.
+actions:
+  apisYmlUpdated: true
+  specsHarvested: 0
+  reason: >-
+    Bootstrapped MedicalDirector identity and catalogued its one real, publicly
+    documented API product (Telstra Health Smart API+) as a gated FHIR gateway.
+    No public developer portal, FHIR CapabilityStatement, or OpenAPI exists to
+    harvest; nothing was fabricated behind the partner gate.
+maintainers:
+- FN: Kin Lane
+  email: kin@apievangelist.com

@@ -1,0 +1,28 @@
+{
+  "repo": "medical-director",
+  "feeds": [
+    {
+      "source": "https://www.telstrahealth.com/wp-content/uploads/2024/08/2024-Telstra-Health-Smart-API.pdf",
+      "feed_url": "https://www.telstrahealth.com/wp-content/uploads/2024/08/2024-Telstra-Health-Smart-API.pdf",
+      "title": "",
+      "saved": 0,
+      "method": "none"
+    },
+    {
+      "source": "https://medicaldirector.statuspage.io/history.atom",
+      "feed_url": "https://medicaldirector.statuspage.io/history.atom",
+      "title": "",
+      "saved": 0,
+      "method": "feed"
+    },
+    {
+      "source": "https://www.medicaldirector.com/status",
+      "feed_url": "https://medicaldirector.statuspage.io/history.atom",
+      "title": "",
+      "saved": 0,
+      "method": "discovered"
+    }
+  ],
+  "post_count": 17,
+  "fetched": "2026-08-01T15:49:00Z"
+}

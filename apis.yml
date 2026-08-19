@@ -32,7 +32,7 @@ tags:
 created: '2026-07-24'
 modified: '2026-07-25'
 # enrichment round 2026-07-24: domain-security probe, conformance, llms.txt, well-known negative record
-specificationVersion: '0.19'
+specificationVersion: '0.23'
 apis:
   - aid: medical-director:telstra-health-smart-api-plus
     name: Telstra Health Smart API+

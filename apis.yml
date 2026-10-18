@@ -44,6 +44,16 @@ image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.j
 tags:
   - Healthcare
   - Australia
+  - Electronic Health Records
+  - FHIR
+  - Interoperability
+  - Practice Management
+  - Primary Care
+  - Clinical Software
+  - Digital Health
+tags_raw:
+  - Healthcare
+  - Australia
   - EHR
   - EMR
   - FHIR
@@ -70,6 +80,12 @@ apis:
       auth scheme are not disclosed on public pages.
     humanURL: https://www.telstrahealth.com/products/smart-api/
     tags:
+      - FHIR
+      - Interoperability
+      - Electronic Health Records
+      - Primary Care
+      - Healthcare
+    tags_raw:
       - FHIR
       - Interoperability
       - EHR

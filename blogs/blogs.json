@@ -23,6 +23,13 @@
       "method": "feed"
     },
     {
+      "source": "https://www.telstrahealth.com/feed/",
+      "feed_url": "https://www.telstrahealth.com/feed/",
+      "title": "",
+      "saved": 0,
+      "method": "feed"
+    },
+    {
       "source": "https://www.telstrahealth.com/wp-content/uploads/2024/08/2024-Telstra-Health-Smart-API.pdf",
       "feed_url": "https://www.telstrahealth.com/wp-content/uploads/2024/08/2024-Telstra-Health-Smart-API.pdf",
       "title": "",
@@ -37,8 +44,8 @@
       "method": "feed"
     }
   ],
-  "post_count": 17,
-  "fetched": "2026-10-10T13:15:00Z",
+  "post_count": 47,
+  "fetched": "2026-10-17T14:53:57Z",
   "feed_nature": "undetermined",
   "feed_nature_basis": null,
   "feed_nature_note": "Whether these posts are the vendor publishing or its support community, decided on the URL path grammar of the saved posts -- not the hostname, which carries both on Khoros, and not author diversity, which flags large vendor blogs as forums. 'undetermined' means undetermined."
